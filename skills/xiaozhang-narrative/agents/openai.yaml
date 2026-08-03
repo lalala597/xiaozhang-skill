@@ -1,0 +1,4 @@
+interface:
+  display_name: "小张叙事系统"
+  short_description: "从个人经历提取证据化思考方式、边界与知识缺口"
+  default_prompt: "Use $xiaozhang-narrative to turn my records into evidence-backed thinking patterns."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "小张Skill入口"
+  short_description: "按当前需求选择一个小张 Skill，处理目标、经历与认知差值"
+  default_prompt: "Use $xiaozhang to choose the one matching Xiaozhang Skill for my current request."
