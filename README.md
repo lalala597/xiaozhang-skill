@@ -22,6 +22,7 @@
 | `xiaozhang-belief` | 信念状态库 | 记录/修订「我现在相信什么」及其边界 |
 | `xiaozhang-benchmark` | 对标定位器 | 找可观察、可模仿且与目标同向的样本 |
 | `xiaozhang-absorb` | 认知差值探测器 | 吸收外部文章、作品、方法、课程或仓库 |
+| `xiaozhang-principles` | 五步流程决策工具 | 「我卡住了」「推不动」「拿不准」「帮我诊断一下」 |
 
 入口只选择一个最匹配的按需 Skill。没有匹配时会明确说没有匹配，不会假装有一个万能 AI。
 
@@ -37,6 +38,12 @@ npx -y skills add lalala597/xiaozhang-skill -g --all
 
 ```bash
 git clone https://github.com/lalala597/xiaozhang-skill.git
+```
+
+国内网络访问 GitHub 慢时，用加速镜像克隆：
+
+```bash
+git clone https://ghproxy.net/https://github.com/lalala597/xiaozhang-skill.git
 ```
 
 不要把自己的日记、Obsidian 私人目录、凭证或聊天记录复制进这个公开仓库。安装的是规则，个人材料仍留在你自己的环境里。
@@ -55,6 +62,7 @@ git clone https://github.com/lalala597/xiaozhang-skill.git
 /xiaozhang-narrative 只读我提供的这批记录，提取判断变化和知识缺口。
 /xiaozhang-goal 我想做个人 IP，但还说不清做到什么算完成。
 /xiaozhang-absorb 帮我拆解这个仓库，找出我和作者判断不同的地方。
+/xiaozhang-principles 这件事我推了两个月没进展，帮我诊断卡在哪。
 ```
 
 Codex、Claude Code 和其他支持 Skills 的客户端通常可以用 `/xiaozhang` 或客户端对应的 Skill 语法；Hermes、豆包、Trae 等通用 Agent 需要把 `skills/` 目录放进它们的 Skills 搜索路径，再告诉它「使用 `xiaozhang` 入口」。不同客户端的自动发现规则可能不同，仓库不承诺替客户端完成安装或保证每个模型自动调用。

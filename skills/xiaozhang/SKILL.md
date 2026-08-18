@@ -24,6 +24,7 @@ description: |
 | 记录「我现在相信什么」、更新判断、保留信念版本 | `xiaozhang-belief` |
 | 找一个可观察、可模仿且与目标同向的对标 | `xiaozhang-benchmark` |
 | 吸收文章、作品、方法、课程或仓库，找认知差值并做验证 | `xiaozhang-absorb` |
+| 卡住了、推不动、拿不准、想诊断自己卡在哪一步 | `xiaozhang-principles` |
 
 ## 选择规则
 
@@ -36,6 +37,7 @@ description: |
 5. 用户已经有具体问题上的判断，想记录或修订它 → `xiaozhang-belief`。
 6. 用户要找谁来模仿 → `xiaozhang-benchmark`。
 7. 用户要拆解外部材料并迁移方法 → `xiaozhang-absorb`。
+8. 用户说卡住了、推不动、拿不准、想诊断决策、提到达利欧或五步流程 → `xiaozhang-principles`。
 
 如果用户只是说「我想变好」或没有可用目标，但请求仍属于本目录能力，先调用 `xiaozhang-goal`。如果请求不属于目录，直接执行无匹配分支，不要编造第六项。
 
@@ -44,7 +46,7 @@ description: |
 请求需要目录外的能力时：
 
 1. 明确说：**当前没有匹配的 Skill**，并点名未支持的领域或动作。
-2. 列出当前目录已有能力：`xiaozhang-narrative`（个人记录）、`xiaozhang-goal`（目标澄清）、`xiaozhang-belief`（信念版本）、`xiaozhang-benchmark`（对标决策链）、`xiaozhang-absorb`（外部材料吸收）。
+2. 列出当前目录已有能力：`xiaozhang-narrative`（个人记录）、`xiaozhang-goal`（目标澄清）、`xiaozhang-belief`（信念版本）、`xiaozhang-benchmark`（对标决策链）、`xiaozhang-absorb`（外部材料吸收）、`xiaozhang-principles`（卡住诊断）。
 3. 不加载任何子 Skill，不给出部署、运维或其他未支持领域的操作步骤，也不声称已经执行。
 
 只有当用户改为请求「帮我澄清这个目标/完成条件」时，才可以从无匹配分支转到 `xiaozhang-goal`。
